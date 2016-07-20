@@ -1,9 +1,6 @@
 class HelloWorld
-  def hello
-    unless name.nil?
-      puts 'Hello, #{name}!'
-    else
-      puts 'Hello, World!'
-    end
+
+  def self.hello(name = "World")
+    return "Hello, #{name}!"
   end
 end
